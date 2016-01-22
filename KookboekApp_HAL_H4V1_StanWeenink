@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kookboek App</title>
+</head>
+
+<body>
+<p id="text">Klik hier en vul in wat je wilt maken.</p>
+<button id="clickButton">klik hier</button>
+
+<script>
+var button = document.getElementById("clickButton");
+var text = document.getElementById("text");
+
+button.addEventListener('click', ingredienten, false);
+
+function ingredienten() {
+    var ingr1 = prompt("typ uw eerste ingredient");
+    window.alert("Dit is uw eerste ingredient: "+ingr1);
+    var ingr2 = prompt("typ uw tweede ingredient");
+    window.alert("Dit is uw tweede ingredient: "+ingr2);
+}
+</script>
+</body>
